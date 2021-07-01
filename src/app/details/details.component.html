@@ -1,0 +1,15 @@
+<h2 *ngIf="getDataService.year$ | async as year">Year: {{year}}</h2>
+
+<ng-container *ngIf="getDataService.records$ | async as records else loading">
+  <div class="details" *ngFor="let record of records">
+    <div class="name">Name: {{record.name}}</div>
+    <div class="winner">Winner: {{record.winner}}</div>
+  </div>
+  <div *ngIf="!records.length">
+    No records present
+  </div>
+</ng-container>
+
+<ng-template #loading>
+  Loading
+</ng-template>

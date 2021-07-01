@@ -1,0 +1,13 @@
+.menu-item {
+  padding: 15px;
+  background-color: #f4f5f7;
+}
+
+.menu-item.active {
+  background-color: #e9eaeb;
+}
+
+.menu-item:hover {
+  background-color: #e0e1e2;
+  cursor: pointer;
+}

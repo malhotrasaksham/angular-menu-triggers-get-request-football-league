@@ -1,0 +1,7 @@
+.details {
+  padding: 8px;
+  line-height: 24px;
+}
+.details:nth-child(2n) {
+  background-color: #005dab10;
+}
